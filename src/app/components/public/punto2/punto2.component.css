@@ -1,0 +1,184 @@
+.product-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(147, 112, 219, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(147, 112, 219, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #9370DB;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.precio {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #8A2BE2;
+    margin: 1rem 0;
+}
+
+.btn-primary {
+    background-color: #9370DB;
+    border: none;
+    padding: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #8A2BE2;
+    transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+    background-color: #D8BFD8;
+    cursor: not-allowed;
+}
+
+/* Estilos del Modal */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-header {
+    background-color: #f8f0ff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.modal-title {
+    color: #9370DB;
+    font-weight: 600;
+}
+
+.table th {
+    color: #9370DB;
+    font-weight: 600;
+}
+
+.btn-danger {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #ff5252;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.product-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.btn-purple {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #9b4de3;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-radius: 15px 15px 0 0;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.cantidad-controls {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.cantidad-controls button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.cantidad-controls button:hover {
+    background-color: #9370DB;
+    color: white;
+}
+
+.cantidad-controls span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #9370DB;
+}
+
+.btn-outline-primary {
+    color: #9370DB;
+    border-color: #9370DB;
+}
+
+.btn-outline-primary:hover {
+    background-color: #9370DB;
+    border-color: #9370DB;
+    color: white;
+}

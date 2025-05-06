@@ -1,0 +1,114 @@
+.header-container {
+    position: relative;
+    width: 100%;
+    padding-top: 25%; /* Esto mantiene la proporción 480/1920 = 0.25 = 25% */
+    background-image: url('/header-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 84%;
+    margin-top: 2rem;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+    width: auto;
+    height: clamp(30px, 5vw, 40px);
+    object-fit: contain;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    pointer-events: none;
+    padding: 0 15px;
+}
+
+.header-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+
+    .navbar-brand {
+        left: 15px;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 94%;
+        margin-top: 1rem;
+    }
+
+    .navbar-brand {
+        left: 10px;
+    }
+}
